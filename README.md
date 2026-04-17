@@ -21,3 +21,7 @@ print(response.code)         # "0"
 print(response.description)  # "La Factura..."
 print(response.notes)        # [CdrNote(code="4252", text="...")]
 ```
+
+## Licencia
+
+Apache License 2.0 — ver [LICENSE](LICENSE).

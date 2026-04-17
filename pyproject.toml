@@ -6,11 +6,40 @@ build-backend = "hatchling.build"
 name = "xfep-parser"
 version = "0.1.0"
 description = "Parser de CDR (Constancia de Recepción) para Facturación Electrónica Perú"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [
+    {name = "Jhonatan Mosquera Tabra", email = "jhonatanmt83@gmail.com"},
+]
+maintainers = [
+    {name = "Jhonatan Mosquera Tabra", email = "jhonatanmt83@gmail.com"},
+]
+keywords = ["sunat", "facturacion-electronica", "peru", "cdr", "parser", "constancia-recepcion", "xml", "cpe"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Topic :: Office/Business :: Financial :: Accounting",
+    "Topic :: Text Processing :: Markup :: XML",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "Natural Language :: Spanish",
+    "Operating System :: OS Independent",
+]
 requires-python = ">=3.13"
 dependencies = ["lxml>=5.0"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0"]
+
+[project.urls]
+Homepage = "https://github.com/Xpertik/xfep-parser"
+Repository = "https://github.com/Xpertik/xfep-parser"
+Issues = "https://github.com/Xpertik/xfep-parser/issues"
+Documentation = "https://github.com/Xpertik/xfep-parser#readme"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/xfep"]
